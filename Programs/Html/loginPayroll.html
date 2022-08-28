@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Payroll Login Form</title>
+<link rel="stylesheet" href="login.css">
+
+<script type="text/javascript"</script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js">  </script>
+</head>
+
+<body class="body">
+
+	<!-- partial:index.html -->
+	<img src="adminLogo.jpg"
+		style="float: left; width: 100px; height: 100px;">
+	<b> <font color="#ff0000" face="Calibri" size="5"> &#160;
+			&#160; &#160; &#160; &#160; &#160; The Best-P Company Payroll Login <br>
+			&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;
+			&#160; &#160;<i><a href="https://www.njit.edu"> New Jersey
+					Institute of Tech. </a></i><font face="Calibri" size="3" color="#00ffff">
+				<br> &#160; &#160; &#160; &#160; &#160; &#160;&#160; &#160;
+				&#160; &#160; &#160; &#160; YuQing Ding, Wei Zhang<br> &#160;
+				&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;
+				&#160; &#160;&#160; &#160; &#160; &#160; &#160; &#160;<script
+					class=message>
+              document.write(new Date().toLocaleDateString());
+            </script>
+
+
+				<div class="login-page">
+					<div class="form">
+						<form class="register-form">
+							<input type="text" name="loginName" placeholder="name" /> <input
+								type="email" name="email" placeholder="email address" />
+							<button>create</button>
+							<p class="message">
+								Already registered? <a href="#">Sign In</a>
+							</p>
+						</form>
+						<form class="login-form" action="#">
+							<p class="message">
+								Not registered? <a href="#">Create an account</a>
+							</p>
+							<br> <input type="text" name="useridPay"
+								placeholder="userID (001)" /> <input type="password"
+								name="pwdPay" placeholder="password" /> <input type="text"
+								name="emailPay" placeholder="email address" /> <input
+								type="submit" value="login" name="loginPay"
+								onclick="return check(this.form)"
+								style="background-color: #4CAF50;/>
+    <p class="message">
+							<a href="#"> </a>
+							</p>
+						</form>
+					</div>
+				</div> <!-- checkout user account --> <script type="text/javascript">
+    function check(form) {
+      if (form.useridPay.value == "001"|"002"|"003"|"004" && form.pwdPay.value == "root") {
+      alert("Welcome to Best-P Company!")
+      window.load()
+       return true;
+      } else {
+        alert("Access denied - Please try again!")
+        return false;
+      }
+    }
+
+        <!-- Script to use Location assign() Method -->
+  function load() {
+location.assign("http://localhost:8080/cs631db/MainPayroll");
+}
+  </script>
+</body>
+</html>

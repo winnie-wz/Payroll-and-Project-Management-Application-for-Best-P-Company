@@ -1,0 +1,178 @@
+<html>
+<head>
+<link rel="stylesheet" href="./CS631.css">
+<script type="text/javascript"</script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js">
+	
+</script>
+
+</head>
+<body>
+	<img src="adminLogo.jpg" class="image1">
+	<h1>
+		<br>
+		<tab2> The Best-P Company Payroll Management 
+	</h1>
+	<h2>
+		<br>
+		<tab3> <a href="	https://www.njit.edu">https://www.njit.edu</a>
+		<tab1>Edge in Technology 
+	</h2>
+	<br>
+	<br>
+
+	<div id="navbar">
+		<p>
+			<a href="www.njit.edu">Home</a> <a href="www.google.com">About</a> <a
+				href="#contact">Contact</a> <a href="www.google.com">Search</a> <a
+				href="#"><script>
+					document.write(new Date().toLocaleDateString());
+				</script></a>
+		</p>
+	</div>
+
+	<form id="vform" method="post" action="MainPayroll">
+		<h3>
+			&#160;
+			<div class="container">
+				<img src="paycheck.jpg" style="width: 34px; height: 30px;"
+					class="image">
+				<div class="overlay">
+					<tab1>Please choose pay check options 
+				</div>
+			</div>
+			<br>
+		</h3>
+		<hr>
+
+		<! start emp query/>
+		<h4>
+			<tab3> <input type="checkbox" name="checkPayEmp">
+			Employee ID: &#160; &#160; <input type="text" maxlength="5" size="5"
+				name="empID" placeholder="1"> &#160; &#160; &#160; &#160;
+			&#160; &#160; Choose Payroll Period: <select name="monthEmp">
+				<option value="1">January</option>
+				<option value="2">February</option>
+				<option value="3">March</option>
+				<option value="4">April</option>
+				<option value="5">May</option>
+				<option value="6">June</option>
+				<option value="7">July</option>
+				<option value="8">August</option>
+				<option value="9">September</option>
+				<option value="10">October</option>
+				<option value="11">November</option>
+				<option value="12">December</option>
+			</select> <select name="yearEmp">
+				<option value="2015">2015</option>
+				<option value="2016">2016</option>
+				<option value="2017">2017</option>
+				<option value="2018">2018</option>
+				<option value="2019">2019</option>
+				<option value="2020" selected>2020</option>
+				<option value="2021">2021</option>
+			</select> <tab1> <input type="submit" value="Get Pay Check"
+				name="payEmp" class="button2"> <br>
+			<br>
+			<! start dep query/> <tab3> <input type="checkbox"
+				name="checkPayDept"> Department ID: &#160; <input
+				type="text" maxlength="5" size="5" name="deptID" placeholder="1001">
+			&#160; &#160; &#160; &#160; &#160; &#160; Choose Payroll Period: <select
+				name="monthDept">
+				<option value="1">January</option>
+				<option value="2">February</option>
+				<option value="3">March</option>
+				<option value="4">April</option>
+				<option value="5">May</option>
+				<option value="6">June</option>
+				<option value="7">July</option>
+				<option value="8">August</option>
+				<option value="9">September</option>
+				<option value="10">October</option>
+				<option value="11">November</option>
+				<option value="12">December</option>
+			</select> <select name="yearDept">
+				<option value="2015">2015</option>
+				<option value="2016">2016</option>
+				<option value="2017">2017</option>
+				<option value="2018">2018</option>
+				<option value="2019">2019</option>
+				<option value="2020" selected>2020</option>
+				<option value="2021">2021</option>
+			</select> <tab1> <input type="submit"
+				value="Department Monthly Cost Report" name="payDept" class="button">
+			<br>
+			<br>
+			<! start div query/> <tab3> <input type="checkbox"
+				name="checkPayDiv"> Division ID: <tab1> <input
+				type="text" maxlength="5" size="5" name="divID" placeholder="FED">
+			<tab1> Choose Payroll Period: <select name="monthDiv">
+				<option value="1">January</option>
+				<option value="2">February</option>
+				<option value="3">March</option>
+				<option value="4">April</option>
+				<option value="5">May</option>
+				<option value="6">June</option>
+				<option value="7">July</option>
+				<option value="8">August</option>
+				<option value="9">September</option>
+				<option value="10">October</option>
+				<option value="11">November</option>
+				<option value="12">December</option>
+			</select> <select name="yearDiv">
+				<option value="2015">2015</option>
+				<option value="2016">2016</option>
+				<option value="2017">2017</option>
+				<option value="2018">2018</option>
+				<option value="2019">2019</option>
+				<option value="2020" selected>2020</option>
+				<option value="2021">2021</option>
+			</select> <tab1> &#160;<input type="submit"
+				value="Division Monthly Cost Report" name="payDiv" class="button">
+		</h4>
+		<hr>
+
+		<! start IRS query/>
+		<h3>
+			&#160;
+			<div class="container">
+				<img src="tax.jpg" style="width: 34px; height: 30px;" class="image">
+				<div class="overlay">
+					<tab1>Please choose IRS Report Types 
+				</div>
+			</div>
+			<br>
+		</h3>
+
+		<h5>
+			<tab2> <input type="checkbox" name="checkComIRS">
+			Start Year: &#160; <input type="text" maxlength="5" size="5"
+				name="startYr" placeholder="2010"> <tab1> End Year:
+			&#160; <input type="text" maxlength="5" size="5" name="endYr" placeholder="2022">
+				<tab1> <input type="submit"
+				name="comIRS" value="Download IRS Reports for Entire Company"
+				class="button2""> </a></tab2>
+		</h5>
+		<hr>
+
+		<! start emp query/>
+		<h5>
+			<tab2> <input type="checkbox" name="checkEmpIRS">
+			Employee ID: &#160; &#160; <input type="text" maxlength="5" size="5"
+				name="empIDIRS" placeholder="1"> &#160; &#160; &#160; &#160;
+			&#160;&#160; Choose IRS Period: <select name="yearEmpIRS">
+				<option value="2015">2015</option>
+				<option value="2016">2016</option>
+				<option value="2017">2017</option>
+				<option value="2018">2018</option>
+				<option value="2019">2019</option>
+				<option value="2020" selected>2020</option>
+				<option value="2021">2021</option>
+			</select> <tab2> <input type="submit" value="Get Employee IRS Report"
+				name="empIRS" class="button2"> <br>
+			<br>
+
+			<hr>
+	</form>
+</body>
+</html>

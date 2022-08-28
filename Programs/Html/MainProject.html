@@ -1,0 +1,165 @@
+<html>
+<head>
+<link rel="stylesheet" href="./CS631.css">
+<script type="text/javascript"</script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src='js/autoresize.jquery.min.js'></script>
+</head>
+<body>
+	<img src="adminLogo.jpg" class="image1">
+	<h1>
+		<br>
+		<form method="post" action="MainProject">
+		<tab2> 	The Best-P Company Project Management
+			<tab2>
+			<img src="warning.jpg" style="width: 25px; height: 20px;"> <input
+				type="submit" value="Restart Database" name="restart"
+				class="button2"></tab1>
+			
+	</h1>
+	</form>
+	<h2>
+		
+		<tab3><tab2> <a href="	https://www.njit.edu">https://www.njit.edu</a>
+		<tab1>Edge in Technology 
+	</h2>
+
+	<div id="navbar">
+		<p>
+			<a href="www.njit.edu">Home</a> <a href="www.google.com">About</a> <a
+				href="#contact">Contact</a> <a href="www.google.com">Search</a> <a
+				href="#"><script>document.write(new Date().toLocaleDateString());</script></a>
+		</p>
+	</div>
+
+	<form id="vform" method="post" action="MainProject">
+		<! insert a new project query/>
+		<h3>
+			&#160;
+			<div class="container">
+			<br>	<img src="insert.jpg" style="width: 35px; height: 30px;"
+					class="image">
+				<div class="overlay">
+					<tab1>Please insert a new project 
+				</div>
+			</div>
+		</h3>
+		<h4>
+			<tab1>
+			<input type="checkbox" name="checkNewProj"> New Project ID:
+			&#160; <input type="text" maxlength="5" size="5" name="projNewID"
+				placeholder="112"> &#160; New Project Name: &#160;<select
+				name="projNewName">
+				<option value="Disney Spring Resort Development" selected>Disney
+					Winter Resort Development</option>
+				<option value="Cape May Summer Resort Development">Cape May
+					Summer Resort Development</option>
+				<option value="LA Autumn Resort Development">LA Autumn
+					Resort Development</option>
+				<option value="DC Winter Musium Development">DC Autumn
+					Resort Development</option>
+			</select> &#160; New Project Location: &#160;<select name="projNewLoc">
+				<option value="FL ORLANDO" selected>FL ORLANDO</option>
+				<option value="NEW YORK CITY">NEW YORK CITY</option>
+				<option value="CA LOS ANGELES">CA LOS ANGELES</option>
+				<option value="DC WASHINGTON">DC WASHINGTON</option>
+				<option value="NJ KRAYS LANDING">NJ KRAYS LANDING</option>
+				<option value="IN EAST CHICAGO">IN EAST CHICAGO</option>
+			</select> &#160; New Project Budget: &#160;<input type="text" maxlength="15"
+				size="15" name="projNewbgt" placeholder="1000000"> <tab1>
+			<br>
+			<br>
+			<tab3> <input type="submit" value="Insert New Project"
+				name="projNew" class="button"> <br>
+			<hr>
+			<! assign new resources query/>
+			<h3>
+				&#160;
+				<div class="container">
+					<img src="aboutinfo.jpg" style="width: 35px; height: 30px;"
+						class="image">
+					<div class="overlay">
+						<tab1>Please assign resources to the new project 
+					</div>
+				</div>
+			</h3>
+
+			<h4>
+				<tab1> <input type="checkbox" name="checkAssignProj">
+				New Project ID: &#160; <input type="text" maxlength="5" size="5"
+					name="projNewIDr" placeholder="112"> &#160; Choose
+				Employees (Multiple): <select name="availEmp" multiple="multiple">
+					<option value="7">Bolton, David</option>
+					<option value="9">Bomboy, James</option>
+					<option value="19">Bonhom, Terrell</option>
+					<option value="27">Booker, Petrine</option>
+					<option value="40">Ghee, Jamie</option>
+					<option value="63">Harrison, Valencia</option>
+					<option value="64">Harrison, Villie</option>
+					<option value="68">Harski, Richard</option>
+					<option value="70">Hartiens, Benjamin</option>
+					<option value="76">Lin, Qinglu</option>
+					<option value="96">Lincoln, Jonh</option>
+					<option value="105">Ling, Alice</option>
+					<option value="109">Lionberger, Brian</option>
+				</select> &#160;&#160; Choose Managers: <select name="availMgr">
+					<option value="105">Ling, Alice</option>
+					<option value="116">Joseph Paul</option>
+					<option value="117">Maria Swabota</option>
+					<option value="118">Michael Anthony</option>
+					<option value="119">Pitbull Perez</option>
+					<option value="120">Richard Steven</option>
+					<option value="121">Robert Daniel</option>
+					<option value="122">Thomas Andrew</option>
+					<option value="123">William Mark</option>
+				</select> &#160;New Project Start Time: &#160;<select name="projStart">
+					<option value="2023" selected>2023</option>
+					<option value="2024">2024</option>
+					<option value="2025">2025</option>
+				</select> &#160; New Project End Time: &#160;<select name="projEnd">
+					<option value="2023" selected>2023</option>
+					<option value="2024">2024</option>
+					<option value="2025">2025</option>
+				</select> <tab1> <br>
+				<br>
+				<tab3> <input type="submit" value="Assign to New Project"
+					name="projAssign" class="button"> <br>
+				<hr>
+				<! start project query/>
+				<h3>
+					&#160; <img src="projstatus.jpg" style="width: 27px; height: 28px;">Please
+					choose Project Report:
+					<tab2> <input type="submit" name="allProj"
+						value="Download All Project Reports include History Projects"
+						class="button2">
+				</h3>
+				<hr>
+				<! start each project uery/>
+				<h5>
+					<tab1> <input type="radio" name="checkProjSta" value="1"
+						checked> Enter Project ID: <tab1> <input
+						type="text" maxlength="5" size="5" name="projID"> <tab1>
+					or <br>
+					<br>
+					<tab1> <input type="radio" name="checkProjSta" value="2">
+					Choose Project Name: <select name="projName">
+						<option value="101">Dagwood Development</option>
+						<option value="102">Cyclone Development</option>
+						<option value="103">Yellow Moose Development</option>
+						<option value="104">Boomrenge Development</option>
+						<option value="105">Bongo Development</option>
+						<option value="106">Hashtag Development</option>
+						<option value="107">Silverstar Development</option>
+						<option value="108">Hidden Hook Development</option>
+						<option value="109">Early First Development</option>
+						<option value="110">Bull Winky Development</option>
+						<option value="111">Lonely Fox Development</option>
+						<option value="112">Disney Winter Development</option>
+					</select> <! start Status Report/> <tab1> <input type="submit"
+						value=" Track Individual Project Status " name="projSta"
+						class="button2"> <br>
+					<hr>
+	</form>
+</body>
+</html>
+
